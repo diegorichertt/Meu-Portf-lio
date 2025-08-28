@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,201 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+    <!--Cabeçalho-->
     <header class="header">
         <nav class="nav">
             <div class="nav-marca">
-                <h2>Meu Portfólio</h2>
+                <h2>Meu Port<span class="nav-marca-cor">fólio</span></h2>
             </div>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Ínicio</a></li>
-                <li><a href="#sobremim" class="nav-link"></a>Sobre mim</li>
-                <li><a href="#projetos" class="nav-link"></a>Projetos</li>
-                <li><a href="#contato" class="nav-link"></a>Contato</li>
+                <li><a href="#sobremim" class="nav-link">Sobre mim</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
-
+    <!--Ínicio da página-->
     <main>
-        <section id="inicio" class="heroi">
-            <div class="heroi-conteudo">
-                <h1>Olá, eu sou <span class="brilho">Diego Richertt</span></h1>
-                <p>Desenvolvedor Web Júnior</p>
-                <p>Apaixonado por criar experiências digitais incríveis e soluções inovadoras</p>
+        <!--Apresentação-->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Olá, eu sou <span class="destaque">Diego Richertt</span></h1>
+                <p class="hero-subtitle">Desenvolvedor Web Júnior</p>
+                <p class="hero-description">Construindo soluções digitais que geram impacto real.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-first">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-second">Entre em Contato</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="img/Foto boa.JPG" alt="Minha foto de perfil">
+            </div>
+        </section>
+
+        <!--Sobre-->
+        <section id="sobremim" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Sou um desenvolvedor apaixonado por tecnologia e inovação. Com experiência em
+                            desenvolvimento web, busco sempre criar soluções que façam a diferença na vida das pessoas.
+                        </p>
+                        <p>
+                            Minhas principais habilidades incluem HTML5, CSS3, JavaScript e muito mais.
+                            Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <h3>Habilidades</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projetos-->
+        <section id="projetos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid">
+                    <!--Primeira carta-->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Projeto 1</h3>
+                            <p>Descrição do seu primeiro projeto incrível.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Segunda carta-->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Projeto 2</h3>
+                            <p>Descrição do seu primeiro projeto incrível.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Terceira carta-->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Projeto 3</h3>
+                            <p>Descrição do seu primeiro projeto incrível.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contato-->
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div>
+                    <div>
+                        <h3>Vamos conversar</h3>
+                        <p>Estou sempre aberto a novas oportunidades e projetos interessantes.</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>richertt19@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(48) 99648-9213</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Florianópolis - SC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
